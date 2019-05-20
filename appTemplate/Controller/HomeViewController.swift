@@ -16,9 +16,20 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        print("Welcome to Section1")
         print("email: \(user.email)")
         print("password: \(user.password)")
         print("name: \(user.name)")
+        
+        // spread data to other tabs!
+        let barViewControllers = self.tabBarController?.viewControllers
+        
+        let section2VC = barViewControllers![2] as! Section2AViewController
+        section2VC.user = self.user
+        
+        let section3VC = (barViewControllers![1] as! UINavigationController).viewControllers[0] as! Section3AViewController
+        section3VC.user = self.user
+        
     }
     
 

@@ -10,10 +10,16 @@ import UIKit
 
 class Section3AViewController: UIViewController {
 
+    var user = UserModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        print("Welcome to Section3")
+        print("email: \(user.email)")
+        print("password: \(user.password)")
+        print("name: \(user.name)")
     }
     
 

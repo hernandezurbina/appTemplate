@@ -33,7 +33,7 @@ class SignupViewController: UIViewController {
         // Pass the selected object to the new view controller.
         if segue.identifier == "goToHome" {
             let tabController: UITabBarController = segue.destination as! UITabBarController
-            // index 0 in tabbarctrl points to first tab, and index 0 in nacctrl points to homeview. if we change order we are screwd!
+             //index 0 in tabbarctrl points to first tab, and index 0 in nacctrl points to homeview. if we change order we are screwd!
             let homeVC = (tabController.viewControllers![0] as! UINavigationController).viewControllers[0] as! HomeViewController
             homeVC.user = self.user
         }
