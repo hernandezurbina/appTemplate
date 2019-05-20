@@ -9,11 +9,16 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    
+    var user = UserModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        print("email: \(user.email)")
+        print("password: \(user.password)")
+        print("name: \(user.name)")
     }
     
 
