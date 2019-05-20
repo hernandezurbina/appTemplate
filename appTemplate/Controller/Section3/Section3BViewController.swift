@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  Section3BViewController.swift
 //  appTemplate
 //
 //  Created by Victor Hernandez-Urbina on 20/05/2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class Section3BViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +27,4 @@ class HomeViewController: UIViewController {
     }
     */
 
-    @IBAction func goToSubsectionButtonPressed(_ sender: UIButton) {
-        performSegue(withIdentifier: "goToSubSectionB", sender: self)
-    }
 }
