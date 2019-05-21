@@ -33,6 +33,14 @@ class Section2AViewController: UIViewController {
     }
     */
 
+    @IBAction func logoutButton2Pressed(_ sender: UIButton) {
+
+    }
+    
+    @IBAction func popToRootButtonPressed(_ sender: UIButton) {
+        self.navigationController?.popToRootViewController(animated: true)
+    }
+    
     @IBAction func logoutButtonPressed(_ sender: UIButton) {
         performSegue(withIdentifier: "goToWelcome", sender: self)
     }

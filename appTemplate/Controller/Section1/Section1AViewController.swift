@@ -27,4 +27,7 @@ class Section1AViewController: UIViewController {
     }
     */
 
+    @IBAction func popToRootButtonPressed(_ sender: UIButton) {
+        self.navigationController?.popToRootViewController(animated: true)
+    }
 }
