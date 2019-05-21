@@ -24,7 +24,8 @@ class HomeViewController: UIViewController {
         // spread data to other tabs!
         let barViewControllers = self.tabBarController?.viewControllers
         
-        let section2VC = barViewControllers![2] as! Section2AViewController
+        let section2VC = (barViewControllers![2] as! UINavigationController).viewControllers[0] as! Section2AViewController
+        //let section2VC = barViewControllers![2] as! Section2AViewController
         section2VC.user = self.user
         
         let section3VC = (barViewControllers![1] as! UINavigationController).viewControllers[0] as! Section3AViewController

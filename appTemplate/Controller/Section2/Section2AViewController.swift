@@ -34,7 +34,8 @@ class Section2AViewController: UIViewController {
     */
 
     @IBAction func logoutButton2Pressed(_ sender: UIButton) {
-
+        // unwindToWelcomeVC
+        self.performSegue(withIdentifier: "unwindToWelcomeVC", sender: self)
     }
     
     @IBAction func popToRootButtonPressed(_ sender: UIButton) {

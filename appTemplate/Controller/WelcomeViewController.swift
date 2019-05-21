@@ -36,4 +36,7 @@ class WelcomeViewController: UIViewController {
         performSegue(withIdentifier: "goToSignup", sender: self)
     }
     
+    @IBAction func prepareForUnwind(segue: UIStoryboardSegue) {
+        
+    }
 }
